@@ -10,16 +10,17 @@ class Solution {
         for(int i=0;i<s.length();i++){
             char ch= s.charAt(i);
             
-            if(ch=='a'){
-                state[0]=(state[0]+1)%2;
+            // ^ ->0 means even, 1 means odd 
+            if(ch=='a'){             
+                state[0]=(state[0]^1);  
             }else if(ch=='e'){
-                state[1]=(state[1]+1)%2;
+                state[1]=(state[1]^1);
             }else if(ch=='i'){
-                state[2]=(state[2]+1)%2;
+                state[2]=(state[2]^1);
             }else if(ch=='o'){
-                state[3]=(state[3]+1)%2;
+                state[3]=(state[3]^1);
             }else if(ch=='u'){
-                state[4]=(state[4]+1)%2;
+                state[4]=(state[4]^1);
             }
             
             
